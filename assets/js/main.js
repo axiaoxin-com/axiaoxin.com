@@ -251,4 +251,7 @@
   const momentLightbox = GLightbox({
     selector: ".moment-lightbox",
   });
+
+    const observer = lozad();
+    observer.observe();
 })();
