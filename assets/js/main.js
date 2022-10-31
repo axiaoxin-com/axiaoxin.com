@@ -82,8 +82,8 @@
         if (body.classList.contains("mobile-nav-active")) {
           body.classList.remove("mobile-nav-active");
           let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
+          navbarToggle.classList.toggle("fa-bars");
+          navbarToggle.classList.toggle("fa-xmark");
         }
         scrollto(this.hash);
       }
@@ -151,8 +151,8 @@
    */
   on("click", ".mobile-nav-toggle", function (e) {
     select("body").classList.toggle("mobile-nav-active");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
+    this.classList.toggle("fa-bars");
+    this.classList.toggle("fa-xmark");
   });
 
   /**
