@@ -268,7 +268,8 @@ section {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpeg") top right no-repeat;
+  background: url("https://wx1.sinaimg.cn/large/0080Ltajgy1h7owamp8jhj30op0dw40g.jpg")
+    top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -868,7 +869,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 50px 0;
-  margin-top:80px;
+  margin-top: 80px;
 }
 
 #footer h3 {
