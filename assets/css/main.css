@@ -24,11 +24,13 @@
 .back-to-top:hover {
   background: #0678e3;
   color: #fff;
+  text-decoration: none;
 }
 
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
