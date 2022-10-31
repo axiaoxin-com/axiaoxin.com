@@ -247,6 +247,17 @@
     selector: ".picture-lightbox",
   });
 
-    const observer = lozad();
-    observer.observe();
+  /**
+   * Initiate picture lazy load
+   */
+  const observer = lozad(".lozad", {
+    loaded: function (el) {
+      if (!el.classList.contains("picture-cover")) {
+        return;
+      }
+      let activeFilter = select(".filter-active");
+      activeFilter.click();
+    },
+  });
+  observer.observe();
 })();
