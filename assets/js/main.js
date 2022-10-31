@@ -189,7 +189,7 @@
   domainCount.setAttribute("data-purecounter-end", domainVal);
 
   let timing = window.performance.timing;
-  let httpVal = timing.responseEnd - timing.requestStart;
+  let httpVal = timing.loadEventEnd - timing.navigationStart;
   httpCount.setAttribute("data-purecounter-end", httpVal);
 
   new PureCounter();
