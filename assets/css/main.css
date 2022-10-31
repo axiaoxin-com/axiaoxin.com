@@ -102,6 +102,8 @@
 .nav-menu a i,
 .nav-menu a:focus i {
   font-size: 25px;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-menu a span,
