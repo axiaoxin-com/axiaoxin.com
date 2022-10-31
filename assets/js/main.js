@@ -212,31 +212,31 @@
   }
 
   /**
-   * Moment isotope and filter
+   * picture isotope and filter
    */
   window.addEventListener("load", () => {
-    let momentContainer = select(".moment-container");
-    if (momentContainer) {
-      let momentIsotope = new Isotope(momentContainer, {
-        itemSelector: ".moment-item",
+    let pictureContainer = select(".picture-container");
+    if (pictureContainer) {
+      let pictureIsotope = new Isotope(pictureContainer, {
+        itemSelector: ".picture-item",
       });
 
-      let momentFilters = select("#moment-filters li", true);
+      let pictureFilters = select("#picture-filters li", true);
 
       on(
         "click",
-        "#moment-filters li",
+        "#picture-filters li",
         function (e) {
           e.preventDefault();
-          momentFilters.forEach(function (el) {
+          pictureFilters.forEach(function (el) {
             el.classList.remove("filter-active");
           });
           this.classList.add("filter-active");
 
-          momentIsotope.arrange({
+          pictureIsotope.arrange({
             filter: this.getAttribute("data-filter"),
           });
-          momentIsotope.on("arrangeComplete", function () {
+          pictureIsotope.on("arrangeComplete", function () {
             AOS.refresh();
           });
         },
@@ -246,10 +246,10 @@
   });
 
   /**
-   * Initiate moment lightbox
+   * Initiate picture lightbox
    */
-  const momentLightbox = GLightbox({
-    selector: ".moment-lightbox",
+  const pictureLightbox = GLightbox({
+    selector: ".picture-lightbox",
   });
 
     const observer = lozad();

@@ -570,13 +570,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# moment
+# picture
 --------------------------------------------------------------*/
-.moment .moment-item {
+.picture .picture-item {
   margin-bottom: 30px;
 }
 
-.moment #moment-filters {
+.picture #picture-filters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -586,7 +586,7 @@ section {
   padding: 2px 15px;
 }
 
-.moment #moment-filters li {
+.picture #picture-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -598,23 +598,23 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.moment #moment-filters li:hover,
-.moment #moment-filters li.filter-active {
+.picture #picture-filters li:hover,
+.picture #picture-filters li.filter-active {
   color: #0363bb;
 }
 
-.moment #moment-filters li:last-child {
+.picture #picture-filters li:last-child {
   margin-right: 0;
 }
 
-.moment .moment-wrap {
+.picture .picture-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.moment .moment-wrap::before {
+.picture .picture-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -627,7 +627,7 @@ section {
   opacity: 0;
 }
 
-.moment .moment-wrap .moment-info {
+.picture .picture-wrap .picture-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -643,7 +643,7 @@ section {
   align-items: center;
 }
 
-.moment .moment-wrap .moment-info::before {
+.picture .picture-wrap .picture-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -657,7 +657,7 @@ section {
   z-index: 9994;
 }
 
-.moment .moment-wrap .moment-info::after {
+.picture .picture-wrap .picture-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -671,13 +671,13 @@ section {
   z-index: 9994;
 }
 
-.moment .moment-wrap .moment-info h4 {
+.picture .picture-wrap .picture-info h4 {
   font-size: 20px;
   color: #2c2c2a;
   font-weight: 600;
 }
 
-.moment .moment-wrap .moment-info p {
+.picture .picture-wrap .picture-info p {
   color: #2c2c2a;
   font-size: 14px;
   text-transform: uppercase;
@@ -685,12 +685,12 @@ section {
   margin: 0;
 }
 
-.moment .moment-wrap .moment-links {
+.picture .picture-wrap .picture-links {
   text-align: center;
   z-index: 4;
 }
 
-.moment .moment-wrap .moment-links a {
+.picture .picture-wrap .picture-links a {
   color: #2c2c2a;
   margin: 0 2px;
   font-size: 28px;
@@ -698,11 +698,11 @@ section {
   transition: 0.3s;
 }
 
-.moment .moment-wrap .moment-links a:hover {
+.picture .picture-wrap .picture-links a:hover {
   color: #148af9;
 }
 
-.moment .moment-wrap:hover::before {
+.picture .picture-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -710,24 +710,24 @@ section {
   opacity: 1;
 }
 
-.moment .moment-wrap:hover .moment-info {
+.picture .picture-wrap:hover .picture-info {
   opacity: 1;
 }
 
-.moment .moment-wrap:hover .moment-info::before {
+.picture .picture-wrap:hover .picture-info::before {
   top: 15px;
   left: 15px;
 }
 
-.moment .moment-wrap:hover .moment-info::after {
+.picture .picture-wrap:hover .picture-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# opensource
+# project
 --------------------------------------------------------------*/
-.opensource .icon-box {
+.project .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -736,7 +736,7 @@ section {
   width: 100%;
 }
 
-.opensource .icon-box .icon {
+.project .icon-box .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -747,115 +747,115 @@ section {
   position: relative;
 }
 
-.opensource .icon-box .icon i {
+.project .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
 
-.opensource .icon-box .icon svg {
+.project .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.opensource .icon-box .icon svg path {
+.project .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
 }
 
-.opensource .icon-box h4 {
+.project .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.opensource .icon-box h4 a {
+.project .icon-box h4 a {
   color: #2c2c2a;
   transition: ease-in-out 0.3s;
   text-decoration: none;
 }
 
-.opensource .icon-box p {
+.project .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.opensource .icon-box:hover {
+.project .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.opensource .iconbox-blue i {
+.project .iconbox-blue i {
   color: #47aeff;
 }
 
-.opensource .iconbox-blue:hover .icon i {
+.project .iconbox-blue:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-blue:hover .icon path {
+.project .iconbox-blue:hover .icon path {
   fill: #47aeff;
 }
 
-.opensource .iconbox-orange i {
+.project .iconbox-orange i {
   color: #ffa76e;
 }
 
-.opensource .iconbox-orange:hover .icon i {
+.project .iconbox-orange:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-orange:hover .icon path {
+.project .iconbox-orange:hover .icon path {
   fill: #ffa76e;
 }
 
-.opensource .iconbox-pink i {
+.project .iconbox-pink i {
   color: #e80368;
 }
 
-.opensource .iconbox-pink:hover .icon i {
+.project .iconbox-pink:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-pink:hover .icon path {
+.project .iconbox-pink:hover .icon path {
   fill: #e80368;
 }
 
-.opensource .iconbox-yellow i {
+.project .iconbox-yellow i {
   color: #ffbb2c;
 }
 
-.opensource .iconbox-yellow:hover .icon i {
+.project .iconbox-yellow:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-yellow:hover .icon path {
+.project .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
 }
 
-.opensource .iconbox-red i {
+.project .iconbox-red i {
   color: #ff5828;
 }
 
-.opensource .iconbox-red:hover .icon i {
+.project .iconbox-red:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-red:hover .icon path {
+.project .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
 
-.opensource .iconbox-teal i {
+.project .iconbox-teal i {
   color: #11dbcf;
 }
 
-.opensource .iconbox-teal:hover .icon i {
+.project .iconbox-teal:hover .icon i {
   color: #fff;
 }
 
-.opensource .iconbox-teal:hover .icon path {
+.project .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
 
