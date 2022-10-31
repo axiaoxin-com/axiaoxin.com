@@ -172,7 +172,6 @@
   let ageCount = select("#age-count");
   let workCount = select("#work-count");
   let domainCount = select("#domain-count");
-  let httpCount = select("#http-count");
 
   let birthdayTime = new Date("1990-10").getTime();
   let ageVal = Math.floor((nowTime - birthdayTime) / 31536000000);
@@ -187,10 +186,6 @@
   let domainTime = new Date("2014-08-31").getTime();
   let domainVal = Math.ceil((nowTime - domainTime) / 86400000);
   domainCount.setAttribute("data-purecounter-end", domainVal);
-
-  let timing = window.performance.timing;
-  let httpVal = timing.loadEventEnd - timing.navigationStart;
-  httpCount.setAttribute("data-purecounter-end", httpVal);
 
   new PureCounter();
 
