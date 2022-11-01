@@ -110,6 +110,7 @@
       duration: 1000,
       easing: "ease-in-out",
       mirror: false,
+      once: true,
     });
   });
 
