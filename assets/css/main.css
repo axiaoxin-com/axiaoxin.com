@@ -914,3 +914,7 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    display:none !important
+}
