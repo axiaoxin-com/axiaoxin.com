@@ -83,7 +83,7 @@
           body.classList.remove("mobile-nav-active");
           let navbarToggle = select(".mobile-nav-toggle");
           navbarToggle.classList.toggle("bi-three-dots");
-          navbarToggle.classList.toggle("bi-x");
+          navbarToggle.classList.toggle("bi-x-square");
         }
         scrollto(this.hash);
       }
@@ -152,7 +152,7 @@
   on("click", ".mobile-nav-toggle", function (e) {
     select("body").classList.toggle("mobile-nav-active");
     this.classList.toggle("bi-three-dots");
-    this.classList.toggle("bi-x");
+    this.classList.toggle("bi-x-square");
   });
 
   /**
