@@ -54,7 +54,7 @@
       }
     });
   };
-  window.addEventListener("load", navbarlinksActive);
+  window.addEventListener("DOMContentLoaded", navbarlinksActive);
   onscroll(document, navbarlinksActive);
 
   /**
@@ -94,7 +94,7 @@
   /**
    * Scroll with offset on page load with hash links in the url
    */
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash);
@@ -105,7 +105,7 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
@@ -142,7 +142,7 @@
         backtotop.classList.remove("active");
       }
     };
-    window.addEventListener("load", toggleBacktotop);
+    window.addEventListener("DOMContentLoaded", toggleBacktotop);
     onscroll(document, toggleBacktotop);
   }
 
@@ -160,7 +160,7 @@
    */
   let preloader = select("#preloader");
   if (preloader) {
-    window.addEventListener("load", () => {
+    window.addEventListener("DOMContentLoaded", () => {
       preloader.remove();
     });
   }
@@ -209,7 +209,7 @@
   /**
    * picture isotope and filter
    */
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     let pictureContainer = select(".picture-container");
     if (pictureContainer) {
       let pictureIsotope = new Isotope(pictureContainer, {
