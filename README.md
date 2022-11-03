@@ -1,9 +1,8 @@
 # axiaoxin.com
 
-![Lines of code](https://img.shields.io/tokei/lines/github/axiaoxin-com/axiaoxin.com)
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=axoapxom-com.axiaoxin.com&left_color=red&right_color=green&left_text=HelloVisitors)
 ![GitHub issues](https://img.shields.io/github/issues/axiaoxin-com/axiaoxin.com)
 ![GitHub last commit](https://img.shields.io/github/last-commit/axiaoxin-com/axiaoxin.com)
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=axoapxom-com.axiaoxin.com&left_color=red&right_color=green&left_text=HelloVisitors)
 
 阿小信的个人主页: [http://axiaoxin.com](http://axiaoxin.com)
 
